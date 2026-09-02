@@ -8,6 +8,9 @@ export const ALL_NUMBERS: readonly number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 /** How long (in seconds) a round lasts before the game is lost. */
 export const GAME_DURATION_SECONDS: number = 60;
 
+/** The maximum number of stars shown for any target. */
+export const MAX_STARS: number = 9;
+
 export type TileStatus = 'available' | 'candidate' | 'wrong' | 'used';
 
 export type GameStatus = 'playing' | 'won' | 'lost';
@@ -41,7 +44,7 @@ export function pickRandomTarget(numbers: readonly number[]): number | undefined
     return undefined;
   }
 
-  const possibleSums = getPossibleSums(numbers);
+  const possibleSums = getPossibleSums(numbers).filter((sum) => sum <= MAX_STARS);
   return possibleSums[Math.floor(Math.random() * possibleSums.length)];
 }
 
