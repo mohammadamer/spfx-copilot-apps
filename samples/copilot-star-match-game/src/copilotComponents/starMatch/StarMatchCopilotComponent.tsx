@@ -67,6 +67,7 @@ export default class StarMatchCopilotComponent extends BaseCopilotComponent<ISta
   protected render(): void {
     const props: IStarMatchProps = {
       message: this.properties.message,
+      durationSeconds: this.properties.durationSeconds,
       userDisplayName: this._userDisplayName,
       siteTitle: this._siteTitle,
       siteUrl: this._siteUrl,
@@ -82,10 +83,7 @@ export default class StarMatchCopilotComponent extends BaseCopilotComponent<ISta
       strings
     };
 
-    ReactDOM.render(
-      React.createElement(StarMatch, { ...props, durationSeconds: this.properties.durationSeconds }),
-      this.context.domElement
-    );
+    ReactDOM.render(React.createElement(StarMatch, props), this.context.domElement);
   }
 
   protected async onTeardown(): Promise<void> {
