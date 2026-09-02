@@ -84,12 +84,10 @@ const useStyles = makeStyles({
     boxShadow: tokens.shadow8
   },
   starsRow: {
-    display: 'flex',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 24px)',
     gap: tokens.spacingHorizontalXS,
-    alignItems: 'center',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    maxWidth: '360px'
+    justifyContent: 'center'
   },
   banner: {
     display: 'flex',
