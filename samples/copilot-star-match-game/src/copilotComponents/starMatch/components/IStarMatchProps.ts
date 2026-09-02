@@ -5,24 +5,28 @@ import type {
 } from '@microsoft/sp-copilot-component';
 
 export interface IStarMatchStrings {
+  GameTitle: string;
+  GameInstructions: string;
   ExpandButtonLabel: string;
-  OpenSiteButtonLabel: string;
-  FollowUpButtonLabel: string;
-  ResizeButtonLabel: string;
   CompactButtonLabel: string;
-  SiteBadgePrefix: string;
-  ThemeBadgePrefix: string;
-  ModeBadgePrefix: string;
-  GreetingPrefix: string;
-  UnknownTheme: string;
-  DefaultDisplayMode: string;
-  FollowUpMessage: string;
+  PlayAgainButtonLabel: string;
+  ShareResultButtonLabel: string;
+  TimeLeftLabel: string;
+  StarsLabel: string;
+  SelectedLabel: string;
+  NumbersLeftLabel: string;
+  WinTitle: string;
+  WinMessage: string;
+  LoseTitle: string;
+  LoseMessage: string;
+  ShareWinMessage: string;
+  ShareLoseMessage: string;
 }
 
 export interface IStarMatchProps {
   /** The message passed as a tool argument from the Copilot host. */
   message: string;
-  /** User display name fetched from Microsoft Graph /me. */
+  /** User display name fetched from Microsoft Graph /me, used to personalize the win/lose banner. */
   userDisplayName: string;
   /** Site title fetched from SharePoint REST /_api/web. */
   siteTitle: string;
