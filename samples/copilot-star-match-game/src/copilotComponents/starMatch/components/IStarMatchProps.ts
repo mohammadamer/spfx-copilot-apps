@@ -26,6 +26,8 @@ export interface IStarMatchStrings {
 export interface IStarMatchProps {
   /** The message passed as a tool argument from the Copilot host. */
   message: string;
+  /** Duration of a game round in seconds. */
+  durationSeconds: number;
   /** User display name fetched from Microsoft Graph /me, used to personalize the win/lose banner. */
   userDisplayName: string;
   /** Site title fetched from SharePoint REST /_api/web. */

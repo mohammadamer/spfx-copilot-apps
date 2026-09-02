@@ -172,11 +172,11 @@ const COMPACT_HEIGHT: number = 380;
  * number exactly once before the timer runs out.
  */
 export default function StarMatch(props: IStarMatchProps): React.ReactElement {
-  const { userDisplayName, hostContext, bridge, onRequestDisplayMode, onRequestSizeChange, strings } = props;
+  const { userDisplayName, durationSeconds, hostContext, bridge, onRequestDisplayMode, onRequestSizeChange, strings } = props;
   const styles = useStyles();
 
   const [isExpanded, setIsExpanded] = React.useState<boolean>(false);
-  const { tileStatuses, target, selectedSum, timeLeft, status, toggleNumber, reset } = useStarMatchGame();
+  const { tileStatuses, target, selectedSum, timeLeft, status, toggleNumber, reset } = useStarMatchGame(durationSeconds);
 
   const theme = hostContext.theme === 'dark' ? webDarkTheme : webLightTheme;
   const isLowTime = status === 'playing' && timeLeft <= LOW_TIME_THRESHOLD_SECONDS;

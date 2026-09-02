@@ -13,7 +13,8 @@ import { z } from 'zod';
 import zodToJsonSchema from 'zod-to-json-schema';
 
 const propertiesSchema = z.object({
-  message: z.string().describe('A message to display.')
+  message: z.string().describe('A message to display.'),
+  durationSeconds: z.number().int().min(10).max(300).default(60).describe('Round duration in seconds, from 10 to 300.')
 });
 
 export type IStarMatchCopilotComponentProperties = z.infer<typeof propertiesSchema>;
