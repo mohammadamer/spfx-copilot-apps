@@ -3,7 +3,7 @@
     "name": "pnp-sp-dev-spfx-copilot-apps-copilot-star-match-game",
     "source": "pnp",
     "title": "Copilot Star Match Game",
-    "shortDescription": "A Copilot Agent that helps teams play the Star Match game.",
+    "shortDescription": "A SharePoint Copilot app that enables teams to play the Star Match game.",
     "url": "https://github.com/pnp/spfx-copilot-apps/tree/main/samples/copilot-star-match-game",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-apps/tree/main/samples/copilot-star-match-game",
     "longDescription": [

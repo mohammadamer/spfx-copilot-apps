@@ -2,9 +2,11 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
+A SharePoint Copilot app that enables teams to play the Star Match game.
 
-[picture of the solution in action, if possible]
+![Star Match game - inline](./assets/inline-star-match-game01.png)
+![Star Match game - inline](./assets/inline-star-match-game02.png)
+![Star Match game - fullscreen](./assets/fullscreen-star-match-game.png)
 
 ## Used SharePoint Framework Version
 
@@ -23,16 +25,15 @@ Short summary on functionality and used technologies.
 
 ## Solution
 
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+| Solution                           | Author(s)                                               |
+| --------------------------------- | ------------------------------------------------------- |
+| copilot-star-match-game     | [Mohammed Amer](https://github.com/mohammadamer)           |
 
 ## Version history
 
 | Version | Date             | Comments        |
 | ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
+| 1.0     | September 20, 2026 | Initial release |
 
 ## Disclaimer
 
