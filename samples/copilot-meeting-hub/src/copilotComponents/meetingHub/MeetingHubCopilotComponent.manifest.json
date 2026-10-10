@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "aa8ee05b-0439-4313-b823-24f1e507e450",
+  "alias": "MeetingHubCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "MeetingHubTool",
+      "description": {
+        "default": "MeetingHub description"
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/meetingHub/MeetingHubCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

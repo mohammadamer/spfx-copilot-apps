@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "copilot-meeting-hub-client-side-solution",
+    "id": "0e823f7b-2e06-4975-a7ef-572bb22114c4",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.0-beta.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "copilot-meeting-hub description"
+      },
+      "longDescription": {
+        "default": "copilot-meeting-hub description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "copilot-meeting-hub Feature",
+        "description": "The feature that activates elements of the copilot-meeting-hub solution.",
+        "id": "1b0fa4a5-dbec-4e6d-9dda-59dd105036f3",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/copilot-meeting-hub.sppkg"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": true,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.18.0",
+    "sdksVersions": {},
+    "version": "1.24.0-beta.2",
+    "libraryName": "copilot-meeting-hub",
+    "libraryId": "0e823f7b-2e06-4975-a7ef-572bb22114c4",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "copilot-meeting-hub",
+    "solutionShortDescription": "copilot-meeting-hub description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "copilotComponent"
+  }
+}

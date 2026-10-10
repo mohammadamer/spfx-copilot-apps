@@ -1,0 +1,16 @@
+{
+  "$schema": "../node_modules/@microsoft/spfx-heft-plugins/lib-commonjs/plugins/copilotAgentPlugin/copilot-agent.schema.json",
+  "agents": [
+    {
+      "name": {
+        "default": "MeetingHub Agent"
+      },
+      "description": {
+        "default": "MeetingHub description"
+      },
+      "components": [
+        "aa8ee05b-0439-4313-b823-24f1e507e450"
+      ]
+    }
+  ]
+}
